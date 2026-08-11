@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You’re In! — Book Your Free Discovery Call | LUMIÈRE</title>
+    <meta name="description" content="Your Glow Guide is on the way. Book your free 30-minute discovery call." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/thankYou-D7vgVERI.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/main-CDBeVS77.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-B8YuxMwB.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="logo">
+          <span class="logo-name">LUMIÈRE</span>
+          <span class="logo-sub">Beauty & Wellness</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav-desktop">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#benefits">About</a></li>
+            <li><a href="/#results">Programs</a></li>
+            <li><a href="/#testimonials">Results</a></li>
+            <li><a href="#faq">Blog</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#booking" class="btn btn-primary btn-sm header-cta" data-scroll-booking>JOIN NOW <span class="arrow">→</span></a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <div class="container">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#booking" data-scroll-booking>Book Call</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-thanks">
+        <div class="container hero-thanks__grid">
+          <div class="reveal">
+            <div class="hero-thanks__photo">
+              <img
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1100&q=80"
+                alt="Woman celebrating her glow journey"
+                width="560"
+                height="700"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="hero-thanks__copy" style="margin-top: 1.5rem; max-width: 36rem">
+              <p class="eyebrow">Welcome to your glow journey <span aria-hidden="true">✦</span></p>
+              <h1 class="display">You’re In!</h1>
+              <p class="sub-italic">Your Glow Guide Is On The Way</p>
+              <p class="body-text">
+                Thank you for saying YES to you.<br />
+                I’m so excited to support you on your journey to radiant skin, more energy, and total confidence.
+              </p>
+              <p class="heart" aria-hidden="true">♡</p>
+            </div>
+          </div>
+
+          <div class="booking-card reveal" id="booking">
+            <h2>Book Your Discovery Call <span aria-hidden="true">✦</span></h2>
+            <p class="card-desc">Let’s create your personalized plan and get real results—together.</p>
+
+            <div class="booking-chips">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                30 Min Session
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="3"/></svg>
+                One-on-One Expert Guidance
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                100% Free · No Obligation
+              </span>
+            </div>
+
+            <p class="cal-label">1. Select a date</p>
+            <div class="cal-header">
+              <button type="button" id="cal-prev" aria-label="Previous month">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <strong id="cal-title">May 2025</strong>
+              <button type="button" id="cal-next" aria-label="Next month">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+            <div class="cal-grid" id="cal-grid" role="grid" aria-labelledby="cal-title"></div>
+
+            <p class="cal-label">2. Select a time</p>
+            <div class="time-slots" id="time-slots" role="group" aria-label="Available times"></div>
+
+            <button type="button" class="btn btn-primary btn-block" id="book-session">
+              BOOK MY SESSION <span class="arrow">→</span>
+            </button>
+            <p class="privacy-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg>
+              Your information is secure &amp; never shared.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar" aria-label="Social proof">
+        <div class="container trust-bar__grid">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="3"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            <span>Trusted by 10,000+ women</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.4 7L12 17.8 5.6 21l1.4-7-5-4.7 7.1-1L12 2z"/></svg>
+            <span>4.9/5 average rating</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Expert-backed wellness</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/></svg>
+            <span>Simple daily rituals</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z"/></svg>
+            <span>Personalized wellness</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT HAPPENS NEXT -->
+      <section class="section section--cream">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">What Happens Next <span class="spark">✦</span></h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card reveal">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              </div>
+              <p class="step-num">01</p>
+              <h3>Check Your Email</h3>
+              <p>Your Glow Guide is on its way! It should arrive in the next few minutes.</p>
+            </article>
+            <article class="step-card reveal">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+              </div>
+              <p class="step-num">02</p>
+              <h3>Book Your Call</h3>
+              <p>Schedule your free discovery call using the calendar above at a time that works for you.</p>
+            </article>
+            <article class="step-card reveal">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a4 4 0 01-4 4H8l-5 3V7a4 4 0 014-4h10a4 4 0 014 4z"/></svg>
+              </div>
+              <p class="step-num">03</p>
+              <h3>We Connect</h3>
+              <p>We’ll chat about your goals, challenges, and create a custom plan for your glow.</p>
+            </article>
+            <article class="step-card reveal">
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2 5h5l-4 3.5 1.5 5.5L12 14l-4.5 3 1.5-5.5L5 8h5l2-5z"/></svg>
+              </div>
+              <p class="step-num">04</p>
+              <h3>Start Your Glow Journey</h3>
+              <p>Get expert guidance, personalized support, and real results that last.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GUIDE -->
+      <section class="section section--blush">
+        <div class="container">
+          <div class="offer-band reveal">
+            <div class="offer-visuals">
+              <div class="mock-book">
+                <strong>Glow From Within</strong>
+                <small>Your Guide to Radiant Skin</small>
+              </div>
+              <div class="mock-phone">
+                <div class="mock-phone__screen">
+                  <span>Glow From<br />Within</span>
+                </div>
+              </div>
+            </div>
+            <div class="offer-copy">
+              <p class="eyebrow eyebrow--rose">Your guide is on its way <span aria-hidden="true">✦</span></p>
+              <h2>Your Free Beauty &amp; Wellness Guide</h2>
+              <p>Packed with expert tips, daily rituals, and empowering practices to help you glow from the inside out.</p>
+              <ul class="check-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                  Nourish your skin &amp; body
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                  Boost energy &amp; confidence
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                  Simple rituals for real results
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section section--cream" id="testimonials">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Real Women. Real Results. <span class="spark">✦</span></h2>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card reveal">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p>This guide was the perfect first step. I felt supported from the first click and so inspired to take care of me.</p>
+              <div class="stars">★★★★★</div>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="" width="40" height="40" loading="lazy" />
+                <div><strong>Sarah J.</strong><span>New York, NY</span></div>
+              </div>
+            </article>
+            <article class="testimonial-card reveal">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p>Booking my discovery call was so easy. I felt supported from the very first click.</p>
+              <div class="stars">★★★★★</div>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="" width="40" height="40" loading="lazy" />
+                <div><strong>Emily R.</strong><span>Austin, TX</span></div>
+              </div>
+            </article>
+            <article class="testimonial-card reveal">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <p>I love how personalized everything is. This isn’t just another program—it’s real.</p>
+              <div class="stars">★★★★★</div>
+              <div class="person">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="" width="40" height="40" loading="lazy" />
+                <div><strong>Megan L.</strong><span>Los Angeles, CA</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="section section--cream">
+        <div class="container">
+          <div class="final-cta reveal">
+            <h2>Let’s Make Your Glow Unstoppable <span class="spark">✦</span></h2>
+            <p>Your next chapter starts with a conversation. I can’t wait to meet you!</p>
+            <a href="#booking" class="btn btn-primary" data-scroll-booking>BOOK MY FREE CALL <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--blush" id="faq">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+          <div class="faq-list reveal" style="max-width: 720px; margin-inline: auto">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                Is the discovery call really free?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer">
+                Yes. Your 30-minute discovery call is 100% free with no obligation. It’s a genuine conversation about your goals and the best next step for you.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                What if I need to reschedule?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer">
+                Life happens — reply to your confirmation email and we’ll help you pick a new time that works better.
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                What can I expect on the call?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer">
+                We’ll review your quiz results, talk through your skin and wellness goals, and outline a clear, personalized plan you can start right away.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-name">LUMIÈRE</span>
+            <span class="logo-sub">Beauty & Wellness</span>
+          </a>
+          <p>Empowering women to look, feel, and live beautifully every day.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/quiz.html">Skin Quiz</a></li>
+            <li><a href="#booking" data-scroll-booking>Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <form class="footer-form" id="footer-form">
+            <label class="sr-only" for="footer-email">Email</label>
+            <input id="footer-email" type="email" placeholder="Enter your email" required />
+            <button type="submit" aria-label="Subscribe">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2025 LUMIÈRE Beauty &amp; Wellness. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </body>
+</html>
